@@ -22,6 +22,7 @@ The project follows an end-to-end ETL pipeline using Python and PostgreSQL, tran
 
 ## 🔄 ETL Workflow
 
+```text
 Extract (Kaggle API)
         ↓
 Transform (Python & Pandas)
@@ -158,5 +159,6 @@ Through this project, I gained hands-on experience in:
 
 ## 📌 Conclusion
 
-This project demonstrates how Python and PostgreSQL can be combined to build an end-to-end analytics solution. By implementing an ETL pipeline and solving real-world business problems, the project transforms raw retail sales data into meaningful insights that support data-driven decision-making.
+This project demonstrates how Python and PostgreSQL can be combined to build an end-to-end analytics solution. By implementing an ETL pipeline and solving real-world business problems, the project transforms raw retail sales data into meaningful insights that support data-driven decision-making. 
+implementing an ETL pipeline and solving real-world business problems, the project transforms raw retail sales data into meaningful insights that support data-driven decision-making.
 raw retail sales data into meaningful business insights that support data-driven decision-making.
