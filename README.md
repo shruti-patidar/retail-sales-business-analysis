@@ -2,9 +2,9 @@
 
 ## 🎯 Project Overview
 
-This project focuses on analyzing retail sales data to uncover business insights related to revenue, profitability, product performance, regional trends, and year-over-year growth.
+This project analyzes retail sales data to uncover business insights related to revenue, profitability, product performance, regional trends, and year-over-year growth.
 
-The project follows an end-to-end ETL and analytics workflow including data extraction, data transformation, data loading, and SQL-based business analysis.
+The project follows an end-to-end ETL pipeline using Python and PostgreSQL, transforming raw retail data into actionable business insights.
 
 ---
 
@@ -17,13 +17,11 @@ The project follows an end-to-end ETL and analytics workflow including data extr
 * 📓 Jupyter Notebook
 * 📦 Kaggle API
 * 📊 SQL
-* 🔄 ETL Pipeline
 
 ---
 
-## 🔄 Project Workflow
+## 🔄 ETL Workflow
 
-```text
 Extract (Kaggle API)
         ↓
 Transform (Python & Pandas)
@@ -33,192 +31,105 @@ Feature Engineering
 Load (PostgreSQL)
         ↓
 Business Analysis (SQL)
-        ↓
-Insights & Recommendations
 ```
 
 ---
 
-## 🔄 ETL Process
-
-### 📥 Extract
-
-* Downloaded retail sales dataset using Kaggle API.
-* Imported dataset into Jupyter Notebook for processing.
-
-### 🔧 Transform
-
-* Handled missing values.
-* Standardized column names.
-* Converted date columns into datetime format.
-* Created additional business metrics:
-
-  * Discount
-  * Sale Price
-  * Profit
-
-### 📤 Load
-
-* Loaded transformed dataset into PostgreSQL using SQLAlchemy.
-* Created a structured database for business analysis.
-
----
-
-## 📂 Dataset Information
+## 📂 Dataset
 
 The dataset contains retail order information including:
 
-* Order Details
-* Product Information
-* Customer Segments
-* Regional Information
-* Pricing Data
+* Orders
+* Products
+* Categories
+* Regions
+* Pricing Information
 * Discounts
 * Profit Metrics
 
----
+### Feature Engineering
 
-# 📈 Business Problems Solved
+Additional business metrics created:
 
-## 🏆 1. Top 10 highest Revenue Generating Products
-
-### Business Question
-
-Which products generate the highest revenue for the business?
-
-### Business Value
-
-Helps identify high-performing products and supports inventory planning and sales strategy.
-
-### Output
-
-<img width="222" height="215" alt="Screenshot 2026-06-21 223944" src="https://github.com/user-attachments/assets/4cef0ead-d10a-4050-99ec-ab266bdb958b" />
-
-
-
-### Key Insight
-
-A small number of products contribute significantly to overall business revenue.
+* Discount
+* Sale Price
+* Profit
 
 ---
 
-## 🌎 2. Top 5 Revenue Generating Products by Region
+## 📈 Business Problems Solved
 
-### Business Question
+### 🏆 Top Revenue Generating Products
 
-Which products perform best within each region?
+Identified the highest revenue-generating products across the business.
 
-### Business Value
+### 🌎 Top 5 Revenue Generating Products by Region
 
-Supports region-specific marketing and product placement decisions.
+Analyzed regional product performance and identified top-performing products within each region.
 
-### Output
+### 📅 Year-over-Year Sales Comparison
 
-(Add Screenshot Here)
+Compared the monthly sales performance between 2022 and 2023.
 
-### Key Insight
+### 📦 Highest Sales Month by Category
 
-Customer preferences vary across regions, creating opportunities for targeted sales strategies.
+Determined the highest sales month for each product category.
 
----
+### 📈 Highest Profit Growth Sub-Category
 
-## 📅 3. Year-over-Year Sales Comparison (2022 vs 2023)
-
-### Business Question
-
-How did monthly sales performance change from 2022 to 2023?
-
-### Business Value
-
-Measures business growth and identifies seasonal sales trends.
-
-### Output
-
-(Add Screenshot Here)
-
-### Key Insight
-
-Several months demonstrated stronger sales performance in 2023 compared to the previous year.
+Identified the sub-category with the highest profit growth in 2023 compared to 2022.
 
 ---
 
-## 📦 4. Highest Sales Month by Category
+## 📸 Project Screenshots
 
-### Business Question
+### 🏆 Top Revenue Generating Products
 
-Which month generated the highest sales for each category?
+<img width="222" height="215" alt="Screenshot 2026-06-21 223944" src="https://github.com/user-attachments/assets/e957ae0e-d2d7-4aaf-9ce8-c8621961f539" />
 
-### Business Value
 
-Helps forecast demand and optimize inventory planning.
+### 🌎 Top 5 Revenue Generating Products by Region
+<img width="354" height="386" alt="image" src="https://github.com/user-attachments/assets/c1032ec3-8375-4c2f-9058-8b43a5e3c81e" />
 
-### Output
 
-(Add Screenshot Here)
 
-### Key Insight
+### 📅 Year-over-Year Sales Comparison
 
-Each category exhibits distinct seasonal purchasing patterns.
+<img width="245" height="257" alt="image" src="https://github.com/user-attachments/assets/9b5cdad8-7cb0-4404-ac4a-5b77b3808a51" />
 
----
 
-## 📈 5. Highest Profit Growth Sub-Category
+### 📦 Highest Sales Month by Category
 
-### Business Question
+<img width="305" height="95" alt="image" src="https://github.com/user-attachments/assets/e943b57c-08c6-425b-bc4e-f07f41d46ce6" />
 
-Which sub-category experienced the highest profit growth in 2023 compared to 2022?
 
-### Business Value
+### 📈 Highest Profit Growth Sub-Category
 
-Identifies high-growth business segments for future investment and expansion.
+<img width="337" height="52" alt="image" src="https://github.com/user-attachments/assets/28f2a1ad-b3b4-4d08-9442-c225290771d5" />
 
-### Output
-
-(Add Screenshot Here)
-
-### Key Insight
-
-Certain sub-categories significantly outperformed others in profitability growth.
 
 ---
 
-# 🚀 Key Skills Demonstrated
+## 🚀 Skills Demonstrated
 
-✅ ETL Pipeline Development
-
-✅ Data Extraction
-
-✅ Data Cleaning
-
-✅ Data Transformation
-
-✅ Feature Engineering
-
-✅ Data Loading
-
-✅ PostgreSQL
-
-✅ SQL Analytics
-
-✅ Window Functions
-
-✅ Common Table Expressions (CTEs)
-
-✅ Conditional Aggregation
-
-✅ Revenue Analysis
-
-✅ Profitability Analysis
-
-✅ Time Series Analysis
-
-✅ Business Analysis
-
-✅ Python Pandas
+* ETL Pipeline Development
+* Data Extraction
+* Data Cleaning
+* Data Transformation
+* Feature Engineering
+* PostgreSQL
+* SQL Analytics
+* Window Functions
+* CTEs
+* Conditional Aggregation
+* Time Series Analysis
+* Revenue Analysis
+* Profitability Analysis
+* Business Analysis
 
 ---
 
-## 📁 Repository Structure
+## 📁 Repository Contents
 
 ```text
 retail-sales-business-analysis/
@@ -236,15 +147,16 @@ retail-sales-business-analysis/
 
 Through this project, I gained hands-on experience in:
 
-* Building ETL workflows using Python.
-* Designing and querying PostgreSQL databases.
-* Solving real-world business problems using SQL.
-* Performing sales and profitability analysis.
-* Applying window functions and advanced SQL concepts.
+* Building ETL workflows using Python and Pandas.
+* Extracting, transforming, and loading data into PostgreSQL.
+* Writing analytical SQL queries to solve business problems.
+* Applying CTEs, window functions, and conditional aggregation.
+* Performing revenue, sales, and profitability analysis.
 * Converting raw business data into actionable insights.
 
 ---
 
 ## 📌 Conclusion
 
-This project demonstrates how Python and PostgreSQL can be combined to build an end-to-end analytics solution, transforming raw retail sales data into meaningful business insights that support data-driven decision-making.
+This project demonstrates how Python and PostgreSQL can be combined to build an end-to-end analytics solution. By implementing an ETL pipeline and solving real-world business problems, the project transforms raw retail sales data into meaningful insights that support data-driven decision-making.
+raw retail sales data into meaningful business insights that support data-driven decision-making.
